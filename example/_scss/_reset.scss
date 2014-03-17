@@ -1,0 +1,17 @@
+﻿// リセット不足分
+address {
+	font-style: normal;
+}
+
+// 日本語テキスト
+body {
+	font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+//	font-size: 13px;  // ここを固定にするとIE8で文字サイズのみの変更が効かない
+//	font-size: (13px / 16px) * 1em\9;  // IE8対策の相対指定。0.8125
+//	line-height: (16px / 13px) * 1em;  // 1.231
+//	*font-size: small;
+//	letter-spacing: 0.4px;
+	word-wrap: break-word;  // word-break: break-all;
+	-webkit-text-size-adjust: none;
+}
+

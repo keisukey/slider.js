@@ -1,0 +1,53 @@
+body {
+	background-color: #000;
+	@include background-image(linear-gradient(left, #000 220px, #303030 500px));
+	color: #fff;
+}
+
+#wrapper {
+	@include clearfix;
+	min-width: 1200px;
+}
+
+header {
+	float: left;
+	padding: 48px 46px 0 80px;
+	background: #000;
+}
+
+section {
+	.cell-other,
+	.slideCell {
+		border: 1px solid #434343;
+		font-size: 10px;
+		line-height: 1.25;
+		img + p {
+			margin-top: 20px;
+		}
+		&:hover {
+			background-color: #505050;
+			border-color: #7c7c7c;
+		}
+		cursor: pointer;
+	}
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 41px;
+	border-top: 1px solid #313131;
+	background-color: #000;
+	.left {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	.right {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}

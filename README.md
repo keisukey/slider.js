@@ -4,6 +4,16 @@ jQuery Plug-In<br />
 Demo: http://media.ranagram.com/slider<br />
 Demo: http://media.ranagram.com/slider2<br />
 
+```
+<script>
+$(function(){
+
+	$("#slider-0").slider();
+
+});
+</script>
+```
+
 # Options
 ・auto: true/false
 	スライドを自動で動き出すかどうかを指定します。

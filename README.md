@@ -4,11 +4,11 @@ jQuery Plug-In<br />
 Demo: http://media.ranagram.com/slider<br />
 Demo: http://media.ranagram.com/slider2<br />
 
-```
+```javascript
 <script>
 $(function(){
 
-	$("#slider-0").slider();
+	$("#example").slider();
 
 });
 </script>

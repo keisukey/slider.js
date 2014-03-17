@@ -1,18 +1,8 @@
 slider.js
 =========
-jQuery Plug-In
-Demo: http://media.ranagram.com/slider
-Demo: http://media.ranagram.com/slider2
-
-{code}
-<script>
-$(function(){
-
-	$("#slider-0").slider();
-
-});
-</script>
-{/code}
+jQuery Plug-In<br />
+Demo: http://media.ranagram.com/slider<br />
+Demo: http://media.ranagram.com/slider2<br />
 
 # Options
 ・auto: true/false

@@ -1,21 +1,19 @@
 slider.js
 =========
-jQuery Plug-In<br />
-Demo: http://media.ranagram.com/slider<br />
-Demo: http://media.ranagram.com/slider2<br />
+jQuery Plug-In  
+Demo: http://media.ranagram.com/slider  
+Demo: http://media.ranagram.com/slider2  
 
 ```javascript
-<script>
 $(function(){
 
 	$("#example").slider();
 
 });
-</script>
 ```
 
 # Options
-・auto: true/false
+- auto: true/false
 	スライドを自動で動き出すかどうかを指定します。
 	trueだと自動で動き出し、falseだと動き出しません。
 	指定しなかった場合の初期値はtrueです。

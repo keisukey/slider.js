@@ -135,6 +135,7 @@
 						def.guide.width(size + max);
 				}
 			}
+			var initTimerId = 0;
 
 			// slider 定義 ==========================
 			// ループする場合は「先頭セルを左に移動させたあと、最終セルの後ろに移動させる」を繰り返す。
@@ -305,7 +306,10 @@
 			// 幅の初期設定
 			if (def.build) {
 				$(window).resize(function() {
-					init(def);
+					clearTimeout(initTimerId);
+					initTimerId = setTimeout(function() {
+						init(def);
+					}, 100);
 				}).triggerHandler("resize");
 			}
 
@@ -444,19 +448,4 @@
 		});
 	}; // slider end
 
-}(jQuery));
-
-
-// サンプル用の追加設定 ====================================
-;(function($) {
-
-	$(function() {
-
-		$(window).resize(function() {
-			// フレームの高さをウィンドウサイズに合わせる。
-			$(".slideFrame").height($(window).height() - $("footer").height());
-		}).resize();
-
-	});
-	
 }(jQuery));

@@ -1,9 +1,11 @@
+#wrapper {
+  min-width: 100%;
+}
+
 /* slider (base)
 --------------------------------------------------------- */
 .slideFrame {
   overflow: hidden;
-  width: 100%;
-  height: 100px;
 }
 
 .slideCell {
@@ -23,8 +25,6 @@
 /* controller */
 .slideCtrl {
   position: absolute;
-  background-color: #333;
-  background-color: rgba(255, 255, 255, 0.55);
   color: #fff;
   font-size: 12px;
   font-weight: bold;
@@ -41,6 +41,9 @@
   height: 60px;
   font-size: 14px;
   line-height: 60px;
+  background-color: #333;
+  background-color: rgba(255, 255, 255, 0.55);
+  color: #fff;
 }
 
 .slideCtrl.left {
@@ -61,12 +64,9 @@
 
 /* slider-0
 --------------------------------------------------------- */
-#slider-0.slideFrame {
-  float: left;
-  width: 342px;
-}
 #slider-0.slideFrame .slideCell {
   width: 300px;
+  height: 420px;
   padding: 20px;
 }
 
@@ -74,12 +74,12 @@
 --------------------------------------------------------- */
 #slider-1.slideFrame {
   position: relative;
-  float: left;
-  width: 164px;
-  margin-left: 10px;
+  height: 164px;
+  margin-left: 220px;
+  margin-top: 10px;
 }
 #slider-1.slideFrame .slideCell {
-  width: 122px;
+  height: 122px;
   padding: 20px;
   background-color: #000;
 }
@@ -87,30 +87,29 @@
   background-color: #505050;
 }
 
-/* slider-2
+/* おまけ
 --------------------------------------------------------- */
-#slider-2.slideFrame {
-  position: relative;
-  float: left;
-  width: 102px;
-  margin-left: 10px;
-}
-#slider-2.slideFrame .slideCell {
-  width: 60px;
-  padding: 20px;
+body {
+  background: -webkit-gradient(linear, 0% 50%, 220 50%, color-stop(100%, #000000), color-stop(100%, #303030));
+  background: -webkit-linear-gradient(left, #000000 220px, #303030 220px);
+  background: -moz-linear-gradient(left, #000000 220px, #303030 220px);
+  background: -o-linear-gradient(left, #000000 220px, #303030 220px);
+  background: linear-gradient(left, #000000 220px, #303030 220px);
 }
 
-/* slider-3
---------------------------------------------------------- */
-#slider-3.slideFrame {
-  float: right;
-  width: 265px;
-  margin-left: 10px;
+section:before {
+  content: "";
+  position: absolute;
+  margin-left: -2px;
+  width: 280px;
+  height: 100%;
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #000000), color-stop(100%, rgba(0, 0, 0, 0)));
+  background: -webkit-linear-gradient(left, #000000, rgba(0, 0, 0, 0));
+  background: -moz-linear-gradient(left, #000000, rgba(0, 0, 0, 0));
+  background: -o-linear-gradient(left, #000000, rgba(0, 0, 0, 0));
+  background: linear-gradient(left, #000000, rgba(0, 0, 0, 0));
 }
-#slider-3.slideFrame .cell-other {
-  width: 263px;
-  margin-bottom: 10px;
-}
-#slider-3.slideFrame .cell-other img {
-  display: block;
+
+#slider-1.slideFrame {
+  z-index: -1;
 }

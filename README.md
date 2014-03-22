@@ -2,7 +2,7 @@ slider.js
 =========
 jQuery Plug-In  
 Demo: http://media.ranagram.com/slider  
-Demo: http://media.ranagram.com/slider2  
+Demo: http://media.ranagram.com/slider.js  
 
 ```javascript
 $(function(){
